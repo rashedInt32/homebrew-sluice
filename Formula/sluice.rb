@@ -2,33 +2,32 @@
 class Sluice < Formula
   desc "Tmux-style sessions and prefix keys on top of zmx, with raw PTY passthrough"
   homepage "https://github.com/rashedInt32/sluice"
-  version "0.4.0"
   license "MIT"
+
+  depends_on "fzf"
+  depends_on "neurosnap/tap/zmx"
 
   on_macos do
     on_arm do
-      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.0/sluice-0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "aa441282b79940abc9299faddbcb495271a7697e78ab3b78d78ba607eecff054"
+      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.1/sluice-0.4.1-aarch64-apple-darwin.tar.gz"
+      sha256 "7ae6e225e23c9a4cc6cfcb1a7f11b6cd183114a0ed2dc00e01acd98ddae82ef3"
     end
     on_intel do
-      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.0/sluice-0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "f93b9b0ef208a0ef9f7d360c96d344ae83fbc6178a353722dcd0b3e58d87c453"
+      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.1/sluice-0.4.1-x86_64-apple-darwin.tar.gz"
+      sha256 "8df6f6e2ab2c6f8f38b18861c152dbee7f1faf49a7104f9cfbd94aea133440e7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.0/sluice-0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9d17a47ae3e1b7c9769ca3c07709e49ae6a6563333320124983e1633e47d2d3e"
+      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.1/sluice-0.4.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4bf39ff5da5e38058561e198412f7529211ebd2a6f563f702175220a704a53fd"
     end
     on_intel do
-      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.0/sluice-0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "27ecb96c3b03d0ec343053442daad223ae97e20a298fea677867312db084b520"
+      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.1/sluice-0.4.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "aafa814165e249a15f0a87be2bb6ea30249e25d700b86ea57507aa27ada5880a"
     end
   end
-
-  depends_on "fzf"
-  depends_on "neurosnap/tap/zmx"
 
   def install
     bin.install "bin/sluice"
