@@ -9,23 +9,23 @@ class Sluice < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.2/sluice-0.4.2-aarch64-apple-darwin.tar.gz"
-      sha256 "4354c304af9fc9cef0ff3781570cfc0ff13dd0eed47716780c28cdb560350564"
+      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.3/sluice-0.4.3-aarch64-apple-darwin.tar.gz"
+      sha256 "9ab77b0ec78a4c9283a6bfa74b61eb5c9b875576f5b3f2e5c32f2e5d30d6df8c"
     end
     on_intel do
-      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.2/sluice-0.4.2-x86_64-apple-darwin.tar.gz"
-      sha256 "2790613bc4feb5dd782e00981b2433e6ce8930832d0cd44269453b550fc3cf4a"
+      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.3/sluice-0.4.3-x86_64-apple-darwin.tar.gz"
+      sha256 "84c50cb398d52dccbacd81135e1431e30ab8b0b935d32ada4a73199839ce2caf"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.2/sluice-0.4.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "feeb6570ab273d156cf96a81deae6e7018ba0e3389abf39c793e0089f0b33bef"
+      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.3/sluice-0.4.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a4d8a55f5405fecbff628e78b7c8686319bb6ae05775f8d8cae31b67775d7ddc"
     end
     on_intel do
-      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.2/sluice-0.4.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "805358baeaef0647625cab14dc6bf89156c3ea95dd0052b4dd31ca47136e05df"
+      url "https://github.com/rashedInt32/sluice/releases/download/v0.4.3/sluice-0.4.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4dddce31c874f76e9c2f5015bc409d643b22b1fcfa1dd93a1b87886e6b7fff7d"
     end
   end
 
